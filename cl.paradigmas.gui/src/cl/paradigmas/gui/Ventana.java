@@ -9,22 +9,23 @@ public class Ventana extends JFrame {
 
 	public final static int NINGUNO=0;
 	public final static int CIRCULO=1;
-	public final static int LINEA=2;
+	public final static int MOVER=2;
+	public final static int CUADRADO=3;
 
 	private Canvas canvas;
 	private ParadigmasToolBar toolbar;
 	private int seleccionado;
 
 	public Ventana(){
+		super("Red de ordenamiento");
 		this.canvas = new Canvas();
 		this.toolbar = new ParadigmasToolBar();
 		this.setSize(new Dimension(800,800));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new BorderLayout());
-		this.add(toolbar, BorderLayout.NORTH);
+		this.add(toolbar, BorderLayout.WEST);
 		this.add(canvas, BorderLayout.CENTER);
 		this.setSeleccionado(NINGUNO);
-		
 	}
 
 	public Canvas getCanvas() {

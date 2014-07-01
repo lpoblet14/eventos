@@ -15,7 +15,7 @@ public class ParadigmasToolBar extends JToolBar {
 
 	public ParadigmasToolBar(){
 		setFloatable(false);
-		setOrientation(JToolBar.HORIZONTAL);
+		setOrientation(JToolBar.VERTICAL);
 		btnLimpiar = new JButton("LIMPIAR");
 		botones = new HashMap<>();
 		grupoBtn = new ButtonGroup();
